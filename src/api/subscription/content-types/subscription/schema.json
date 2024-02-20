@@ -4,7 +4,8 @@
   "info": {
     "singularName": "subscription",
     "pluralName": "subscriptions",
-    "displayName": "Subscription"
+    "displayName": "Subscription",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,14 +22,27 @@
       "type": "integer"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "tshirt": {
+      "type": "boolean"
+    },
+    "member": {
+      "type": "boolean"
+    },
+    "forum": {
+      "type": "boolean"
+    },
+    "conference": {
+      "type": "boolean"
     }
   }
 }
